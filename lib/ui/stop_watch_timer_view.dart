@@ -82,7 +82,7 @@ class _StopWatchViewState extends State<StopWatchView> {
                           ),
                           const SizedBox(height: 50.0),
                           Text(
-                            'Time In Seconds : ${stopWatchTime.inSeconds}',
+                            'Total Time In Minutes : ${stopWatchTime.inMinutes}',
                             textAlign: TextAlign.center,
                             style: const TextStyle(
                               fontSize: 30,
@@ -94,7 +94,7 @@ class _StopWatchViewState extends State<StopWatchView> {
                   ),
                   const SizedBox(height: 50.0),
                   Text(
-                    'Last Time In Seconds Before Termination : ${SharedPreferenceHelper.getStopWatchInSeconds}',
+                    'Last Total Time In Minutes Before Termination : ${SharedPreferenceHelper.getLastTotalTimeInMinutes}',
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                       fontSize: 30,

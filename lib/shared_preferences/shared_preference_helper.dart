@@ -15,12 +15,12 @@ class SharedPreferenceHelper {
 
   // stop watch time:---------------------------------------------------
 
-  static Future saveStopWatch(int value) async {
-    await _sharedPreference.setInt(Preferences.stopWatchTimeInSeconds, value);
+  static Future saveLastTotalTimeInMinutes(int value) async {
+    await _sharedPreference.setInt(Preferences.lastTotalTimeInMinutes, value);
   }
 
-  static int? get getStopWatchInSeconds {
-    return _sharedPreference.getInt(Preferences.stopWatchTimeInSeconds) ?? 0;
+  static int? get getLastTotalTimeInMinutes {
+    return _sharedPreference.getInt(Preferences.lastTotalTimeInMinutes) ?? 0;
   }
 
   // other:---------------------------------------------------

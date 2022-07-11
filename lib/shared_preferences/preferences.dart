@@ -1,3 +1,3 @@
 class Preferences {
-  static const String stopWatchTimeInSeconds = 'stopWatchTimeInSeconds';
+  static const String lastTotalTimeInMinutes = 'lastTotalTimeInMinutes';
 }

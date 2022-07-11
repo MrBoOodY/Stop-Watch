@@ -10,7 +10,8 @@ class StopWatchViewModel extends ChangeNotifier {
   addTime({bool isReset = false}) {
     stopWatchTime.value =
         Duration(seconds: isReset ? 0 : stopWatchTime.value.inSeconds + 1);
-    SharedPreferenceHelper.saveStopWatch(stopWatchTime.value.inSeconds);
+    SharedPreferenceHelper.saveLastTotalTimeInMinutes(
+        stopWatchTime.value.inMinutes);
     stopWatchTime.notifyListeners();
   }
 
